@@ -93,23 +93,6 @@ a {
   font-size: 14px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 24px;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.nav-links a:hover {
-  color: var(--text);
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .lang-toggle {
   display: inline-flex;
   align-items: center;
@@ -139,6 +122,16 @@ a {
 .lang-btn.active {
   background: rgba(255, 255, 255, 0.16);
   color: var(--text);
+}
+
+.nav-cta {
+  white-space: nowrap;
+}
+
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .btn {
@@ -638,6 +631,7 @@ h1 {
 
 .icon-actions {
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .icon-btn {
@@ -710,12 +704,14 @@ h1 {
 
 @media (max-width: 640px) {
   .nav {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
   }
 
-  .nav-links {
-    flex-wrap: wrap;
+  .logo {
+    width: 100%;
   }
 
   .nav-actions {
@@ -730,6 +726,17 @@ h1 {
   .monitor {
     width: 320px;
     height: 210px;
+  }
+
+  .icon-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .icon-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
   }
 }
 

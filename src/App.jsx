@@ -84,7 +84,7 @@ const copy = {
       linkedin: 'LinkedIn',
     },
     footer: {
-      left: '© 2026 Natan. Todos os direitos reservados.',
+      left: '© 2026 Natanael. Todos os direitos reservados.',
       right: 'Disponivel para novos projetos.',
     },
     highlight: 'Projeto em destaque',
@@ -171,7 +171,7 @@ const copy = {
       linkedin: 'LinkedIn',
     },
     footer: {
-      left: '© 2026 Natan. All rights reserved.',
+      left: '© 2026 Natanael. All rights reserved.',
       right: 'Available for new projects.',
     },
     highlight: 'Featured project',
@@ -189,11 +189,6 @@ export default function App() {
           <div className="logo">
             <span className="logo-mark">&gt;</span> DVLP R
           </div>
-          <nav className="nav-links">
-            <a href="#about">{t.nav.about}</a>
-            <a href="#projects">{t.nav.projects}</a>
-            <a href="#skills">{t.nav.skills}</a>
-          </nav>
           <div className="nav-actions">
             <div className="lang-toggle" role="group" aria-label="Language">
               <button
@@ -211,7 +206,7 @@ export default function App() {
                 BR
               </button>
             </div>
-            <a className="btn outline" href="#contact">
+            <a className="btn outline nav-cta" href="#contact">
               {t.nav.contact}
             </a>
           </div>
@@ -220,7 +215,7 @@ export default function App() {
         <main className="hero" id="hero">
           <div className="hero-text">
             <p className="eyebrow">
-              {t.hero.eyebrow} <strong>Natan</strong>
+              {t.hero.eyebrow} <strong>Natanael</strong>
             </p>
             <h1>{t.hero.title}</h1>
             <p className="lead">{t.hero.lead}</p>
